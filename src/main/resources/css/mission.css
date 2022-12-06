@@ -1,0 +1,217 @@
+/* External CSS style file */
+
+* {
+   box-sizing: border-box;
+   
+}
+
+body {
+  font-family:Arial, Helvetica, sans-serif;
+  /* padding: 10px; */
+  margin: 0;
+  padding: 0;
+  position: relative;
+  color: rgb(0, 0, 0);
+}
+
+/* Header (div) formatting */
+.header {
+   padding: 20px;
+   text-align: center;
+   background-color: #ffffff;
+   color: #414833;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.header-image{
+  max-width: 100%;
+  height: 300px;
+  border-radius: 5px;
+}
+
+ .header h1 {
+   font-size: 52px;
+   text-align: center;
+}
+.header h3 {
+   font-size: 20px;
+   text-align: left;
+}
+.header p {
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 810px;
+  text-align: center;
+  margin: 10px auto;
+  padding: 0 20px;
+  font-size: 16px;
+} 
+
+/* Make the logo have a rounded edge */
+img.top-image::after {
+   vertical-align: left;
+}
+
+/* CSS Layout from W3Schools: https://www.w3schools.com/css/css_templates.asp */
+/* Style the top navigation bar */
+.topnav {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  height: 55px;
+ }
+
+ /* Style the topnav links */
+ .topnav a {
+  display: flex;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: rgb(65, 72, 51);
+  padding-left: 1%;
+  padding-right: 1%;
+  height: 100%;
+ }
+ 
+ /* Change color on hover */
+ .topnav a:hover {
+  background-color: rgb(194, 200, 171);
+  text-decoration-color: blue;
+ }
+ /* Style the content */
+ .content {
+   background-color:#ffffff;
+   padding: 10px;
+ }
+ 
+ /* Style the footer */
+ .footer {
+   background-color: #414833;
+   padding: 10px;
+ }
+
+
+ /* grid css */
+
+ .flex-grid {
+   display: flex;
+ }
+ .flex-grid .col {
+   flex: 1;
+ }
+
+ .col {
+   /* background: salmon; */
+   padding: 1rem;
+ }
+
+ .persona-box {
+   background: rgb(194, 200, 171);
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   margin: 1rem 1rem 1rem 1rem;
+   border-radius: 5px;
+   color: #000000;
+   flex-wrap: wrap;
+ }
+
+
+
+
+ .align-center {
+   text-align: center;
+ }
+ 
+ .align-right {
+   text-align: right;
+ }
+
+ .align-left {
+   text-align: left;
+ }
+
+ .person-image {
+   max-width: 100%;
+   height: 250px;
+   border-radius: 5px;
+ }
+ .htu-image {
+  height: 250px;
+  border-radius: 5px;
+}
+.nav-image {
+  height: 40px;
+  border-radius: 5px;
+  width: 1200px;
+}
+.escape-image {
+  height: 100px;
+  border-radius: 5px;
+  width: auto;
+}
+ .logo {
+  width: 35px;
+  margin: 0px 5px 0px 5px;
+}
+.header_table {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 85%;
+  color: #000000;
+  font-size: 30px;
+}
+.ScoreHeader {
+  background-image: url("header_1.png"); 
+}
+.headertitle {
+  text-align: center;
+  font-size: 80px;
+  text-shadow: 3px 3px rgb(101, 109, 74);
+}
+header {
+  position: relative;
+  color: rgb(255, 255, 255);
+  background-image: url("header_1.png");
+  background-size: cover;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.headertitle {
+  text-align: center;
+  font-size: 80px;
+  text-shadow: 3px 3px rgb(101, 109, 74);
+}
+
+.HomeHeader {
+  background-image: url("flowers.png"); 
+  text-align: center;
+}
+
+.GapHeader {
+  background-image: url("abstract.png"); 
+}
+
+.ScoreHeader {
+  background-image: url("header_1.png"); 
+}
+.breadcrumb-navigation > li {
+  display: inline;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.breadcrumb-navigation li + li:before {
+  padding: 4px;
+  content: "/";
+}
+.description p {
+padding-left: 500px;
+padding-right: 500px;
+}
+

@@ -1,0 +1,278 @@
+/* External CSS style file */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
+* {
+   box-sizing: border-box;
+}
+
+body {
+   font-family:"Inter";
+   /* padding: 10px; */
+   margin: 0;
+   padding: 0;
+   position: relative;
+   color: rgb(0, 0, 0);
+}
+
+/* Header (div) formatting */
+.header {
+   padding: 100px;
+   text-align: center;
+   background-color: #414833;
+   color: #C2C5AA;
+}
+
+.header h1 {
+   font-size: 50px;
+   text-align: center;
+}
+.header h3 {
+   font-size: 20px;
+   text-align: left;
+}
+.header p {
+   text-align: left;
+   
+}
+
+/* Make the logo have a rounded edge */
+img.top-image::after {
+   vertical-align: left;
+}
+
+/* CSS Layout from W3Schools: https://www.w3schools.com/css/css_templates.asp */
+/* Style the top navigation bar */
+.topnav {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  height: 55px;
+ }
+
+ /* Style the topnav links */
+ .topnav a {
+  display: flex;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: rgb(65, 72, 51);
+  padding-left: 1%;
+  padding-right: 1%;
+  height: 100%;
+ }
+ 
+ /* Change color on hover */
+ .topnav a:hover {
+  background-color: rgb(194, 200, 171);
+  text-decoration: none;
+ }
+ 
+ /* Style the content */
+ .content {
+   background-color: #ffffff;
+   padding: 10px;
+ }
+ 
+ /* Style the footer */
+ .footer {
+   background-color: #414833;
+   padding: 10px;
+ }
+
+
+ /* grid css */
+
+ .flex-grid {
+   display: flex;
+ }
+ .flex-grid .col {
+   flex: 1;
+ }
+
+ .col {
+   /* background: salmon; */
+   padding: 1rem;
+ }
+
+ .persona-box {
+   background: #F3F3F3;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   margin: 1rem 1rem 1rem 1rem;
+   border-radius: 25px;
+ }
+ .state-box {
+  background: #F3F3F3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 1rem 1rem 1rem 1rem;
+  border-radius: 5px;
+}
+
+
+
+ .align-center {
+   text-align: center;
+ }
+ 
+ .align-right {
+   text-align: right;
+ }
+
+ .align-left {
+   text-align: left;
+ }
+
+ .person-image {
+   width: 200px;
+   height: 250px;
+   border-radius: 25px;
+ }
+ .myButton {
+  font-size: 1rem;
+  padding: 5px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  width: 100px;
+  border-radius: 7px;
+  background-color: rgb(65, 72, 51);
+  color: #C2C5AA;
+  border-style: none;
+}
+.myButton:hover {
+	background-color: rgb(101, 109, 74);
+}
+
+.container{
+  display: flex;
+}
+.input-group{
+  margin: 1rem;
+}
+.input-group select{
+  padding: 1rem;
+  outline: none;
+  border: 0.5px solid #C2C5AA;
+  font-size: 1rem;
+}
+.radio {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 10px;
+  justify-content: center;
+  
+}
+.logo {
+  width: 35px;
+  margin: 0px 5px 0px 5px;
+}
+.escapeHatch {
+  display: flex;
+  align-items: center;
+}
+.header_table {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 85%;
+}
+.filter_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: #C2C5AA;
+  margin: 0px 50px 50px 50px;
+  padding-left: 3%;
+  padding-right: 3%;
+  border-radius: 5px;
+  color: #000000;
+  
+}
+ 
+.table_config {
+    margin-bottom: 3%;
+    width: 100%;
+}
+
+
+.table_config,
+.table_config th,
+.table_config td {
+    border: 1px solid;
+    border-color: #333D20;
+    background-color: rgb(255, 255, 255);
+    border-collapse: collapse;
+    text-align: center;
+    
+}
+
+.invisible_table {
+    margin-bottom: 3%;
+    width: 100%;
+}
+
+
+.invisible_table th,
+.invisible_table td {
+    border: 0px solid;
+    border-collapse: collapse;
+    font-size: larger;
+    text-align: center;
+    height: 30px;
+}
+.population_change{
+  text-align: center;
+}
+.ScoreHeader {
+  background-image: url("header_2.png"); 
+}
+.headertitle {
+  text-align: center;
+  font-size: 80px;
+  text-shadow: 3px 3px rgb(101, 109, 74);
+}
+header {
+  position: relative;
+  color: rgb(255, 255, 255);
+  background-image: url("flowers.png");
+  background-size: cover;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.headertitle {
+  text-align: center;
+  font-size: 80px;
+  text-shadow: 3px 3px rgb(101, 109, 74);
+}
+
+.HomeHeader {
+  background-image: url("flowers.png"); 
+  text-align: center;
+}
+
+.GapHeader {
+  background-image: url("abstract.png"); 
+}
+
+.ScoreHeader {
+  background-image: url("header_2.png"); 
+}
+.breadcrumb-navigation > li {
+  display: inline;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.breadcrumb-navigation li + li:before {
+  padding: 4px;
+  content: "/";
+}
+.description p {
+  padding-left: 300px;
+  padding-right: 300px;
+  line-height: 20px;
+  }

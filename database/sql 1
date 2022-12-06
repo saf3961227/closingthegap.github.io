@@ -1,0 +1,74 @@
+SELECT *,
+CASE
+    When LGAcode LIKE '1%' then 'NSW'
+    When LGAcode LIKE '2%' then 'Victoria'
+    When LGAcode LIKE '3%' then 'QLD'
+    When LGAcode LIKE '4%' then 'South Australia'
+    When LGAcode LIKE '5%' then 'Western Australia'
+    When LGAcode LIKE '6%' then 'Tasmania'
+    When LGAcode LIKE '7%' then 'Northern Territory'
+    When LGAcode LIKE '8%' then 'ACT'
+    When LGAcode LIKE '9%' then 'Other'--other cases
+END as State
+FROM LGA WHERE Year = '2021';
+
+select * from LGA;
+
+select
+    -- all columns except count, lgacode, year
+    a.IndigenousStatus,
+    a.AgeGroup,
+    a.Gender,
+    sum(case when a.Year = 2016 then a.Count else 0 end) as Population_2016,
+    sum(case when a.Year = 2021 then a.Count else 0 end) as Population_2021,
+    sum(case when a.Year = 2021 then a.Count else 0 end) - sum(case when a.Year = 2016 then a.Count else 0 end) as Change 
+from
+    Population a join LGA b
+    on a.lgacode = b.lgacode
+where
+    b.LGAName = 'Albury' -- java variable to be passed here 
+group by
+    -- all columns except count, year
+    a.IndigenousStatus,
+    a.AgeGroup,
+    a.Gender,
+    a.LGAcode;
+    
+select
+    -- all columns except count, lgacode, year
+    a.IndigenousStatus,
+    a.SchoolYear,
+    a.Gender,
+    sum(case when a.Year = 2016 then a.Count else 0 end) as Population_2016,
+    sum(case when a.Year = 2021 then a.Count else 0 end) as Population_2021,
+    sum(case when a.Year = 2021 then a.Count else 0 end) - sum(case when a.Year = 2016 then a.Count else 0 end) as Change 
+from
+    Education a join LGA b
+    on a.lgacode = b.lgacode
+where
+    b.LGAName = 'Albury' -- java variable to be passed here 
+group by
+    -- all columns except count, year
+    a.IndigenousStatus,
+    a.SchoolYear,
+    a.Gender,
+    a.LGAcode;
+    
+select
+    -- all columns except count, lgacode, year
+    a.IndigenousStatus,
+    a.IncomeBracket,
+    sum(case when a.Year = 2016 then a.Count else 0 end) as Population_2016,
+    sum(case when a.Year = 2021 then a.Count else 0 end) as Population_2021,
+    sum(case when a.Year = 2021 then a.Count else 0 end) - sum(case when a.Year = 2016 then a.Count else 0 end) as Change 
+from
+    Income a join LGA b
+    on a.lgacode = b.lgacode
+where
+    b.LGAName = 'Albury' -- java variable to be passed here 
+group by
+    -- all columns except count, year
+    a.IndigenousStatus,
+    a.IncomeBracket,
+    a.LGAcode;
+    
